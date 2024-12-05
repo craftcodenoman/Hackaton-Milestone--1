@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Editable Resume Builder</h1>
+    <form id="resume-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Name" required />
+
+        <label for="email"> Email:</label>
+        <input
+          type="emailt"
+          id="email"
+          placeholder="Enter Your Email"
+          required
+        />
+
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter Your Number"
+          required
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Education</legend>
+        <label for="education">Education:</label>
+        <textarea
+          id="education"
+          placeholder="Enter Your Education"
+          rows="4"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Experiance</legend>
+        <label for="experiance">Experiance:</label>
+        <textarea
+          id="experiance"
+          placeholder="Enter Your Work Experiance"
+          rows="4"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills:</label>
+        <textarea
+          id="skills"
+          placeholder="Enter Your Skills"
+          rows="4"
+          required
+        ></textarea>
+      </fieldset>
+
+      <button type="submit"><b>Generate Your Resume</b></button>
+    </form>
+    <br>
+
+     <!-- Editable Resume -->
+      <div id="resume-display" contenteditable="true">
+        <!-- Resume will be Generated -->
+     </div>
+     <script src="script.js"></script>
+  
+    </body>
+</html>
